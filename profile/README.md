@@ -44,7 +44,7 @@ We build the full stack: individual domain KG libraries, a federated orchestrati
 
 | Repository | Description |
 |---|---|
-| [**ProteusPy**](https://github.com/Flux-Frontiers/proteusPy) | Python library for protein structure analysis — disulfide bond geometry, PDB parsing, torsion angle calculation, visualization. Used in structural bioinformatics research. |
+| [**ProteusPy**](https://github.com/suchanek/proteusPy) | Python library for protein structure analysis — disulfide bond geometry, PDB parsing, torsion angle calculation, visualization. Used in structural bioinformatics research. |
 | **WaveRider** *(coming soon)* | Riemannian manifold ML stack — zero-parameter classifiers, geometric gradient descent, and intrinsic dimensionality probes for high-dimensional embedding spaces. |
 
 ---
