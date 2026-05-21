@@ -39,6 +39,7 @@ We build the full stack: individual domain KG libraries, a federated orchestrati
 | [**MemoryKG**](https://github.com/Flux-Frontiers/memory_kg) | `memory` | Episodic memory traces — personal recollections structured as an associative knowledge graph. |
 | [**AgentKG**](https://github.com/Flux-Frontiers/agent_kg) | `agent` | Conversational memory as a live knowledge graph. Persists agent session context across turns; queryable by topic and entity. |
 | [**FTreeKG**](https://github.com/Flux-Frontiers/ftree_kg) | `ftree` | File system tree knowledge graph — directory hierarchies, file metadata, and structural relationships across codebases and archives. |
+| [**GutenbergKG**](https://github.com/Flux-Frontiers/Gutenberg_kg) | `gutenkg` | GutenbergKG - the Knowledge Press. 245 Books, 1.2m Nodes, 5.4m Edges |
 
 ### Scientific Computing
 
