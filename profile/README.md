@@ -28,26 +28,53 @@ We build the full stack: individual domain KG libraries, a federated orchestrati
 
 ## The Stack
 
-### Domain Knowledge Graph Libraries
+Every repository below is public. Packages marked with a PyPI name install with `pip`; the rest install from GitHub.
 
-| Repository | Kind | Description |
+### Federation and SDK
+
+| Repository | PyPI | Description |
 |---|---|---|
-| [**PyCodeKG**](https://github.com/Flux-Frontiers/code_kg) | `code` | Python codebase analysis via AST — complete call graph, class hierarchies, import chains, and docstring embeddings. Structural truth + semantic retrieval. |
-| [**DocKG**](https://github.com/Flux-Frontiers/doc_kg) | `doc` | Semantic knowledge graph for document corpora — Markdown, plain text, RST. Extracts sections, topics, entities, and cross-references. |
-| [**MetaboKG**](https://github.com/Flux-Frontiers/meta_kg) | `meta` | Metabolic pathway knowledge graph backed by KEGG/BioCyc reaction schemas. Supports FBA, ODE simulation, and what-if perturbation analysis. |
-| [**DiaryKG**](https://github.com/Flux-Frontiers/diary_kg) | `diary` | Personal diary corpus as a temporally ordered knowledge graph. Chronological narrative + semantic search. |
-| [**MemoryKG**](https://github.com/Flux-Frontiers/memory_kg) | `memory` | Episodic memory traces — personal recollections structured as an associative knowledge graph. |
-| [**AgentKG**](https://github.com/Flux-Frontiers/agent_kg) | `agent` | Conversational memory as a live knowledge graph. Persists agent session context across turns; queryable by topic and entity. |
-| [**FTreeKG**](https://github.com/Flux-Frontiers/ftree_kg) | `ftree` | File system tree knowledge graph — directory hierarchies, file metadata, and structural relationships across codebases and archives. |
-| [**GutenbergKG**](https://github.com/Flux-Frontiers/Gutenberg_kg) | `gutenkg` | GutenbergKG - the Knowledge Press. 245 Books, 1.2m Nodes, 5.4m Edges |
+| [**KGRAG**](https://github.com/Flux-Frontiers/KGRAG) | [`kg-rag`](https://pypi.org/project/kg-rag/) | The federation layer. Registers every domain KG, fans a query out across all of them, and returns one globally ranked result set. Ships as a CLI and an MCP server. |
+| [**kgmodule-utils**](https://github.com/Flux-Frontiers/KG_utils) | [`kgmodule-utils`](https://pypi.org/project/kgmodule-utils/) | Shared SDK for every KG module: graph store, sqlite-vec semantic index, build pipeline, snapshots, and the 3-D growth engine behind the fleet's visualizations. |
 
-### Scientific Computing
+### Domain knowledge graphs
+
+| Repository | Kind | PyPI | Description |
+|---|---|---|---|
+| [**PyCodeKG**](https://github.com/Flux-Frontiers/pycode_kg) | `code` | [`pycode-kg`](https://pypi.org/project/pycode-kg/) | Python codebase analysis via AST: complete call graph, class hierarchies, import chains, and docstring embeddings. Structural truth + semantic retrieval. |
+| [**TSCodeKG**](https://github.com/Flux-Frontiers/tscode_kg) | `typescript` | [`tscode-kg`](https://pypi.org/project/tscode-kg/) | The same code graph for TypeScript and JavaScript, built with tree-sitter. |
+| [**SwiftKG**](https://github.com/Flux-Frontiers/swift_kg) | `swift` | [`swift-kg`](https://pypi.org/project/swift-kg/) | The same code graph for Swift codebases, built with tree-sitter. |
+| [**DocKG**](https://github.com/Flux-Frontiers/doc_kg) | `doc` | [`doc-kg`](https://pypi.org/project/doc-kg/) | Semantic knowledge graph for document corpora: Markdown, plain text, RST, and PDF. Extracts sections, topics, entities, and cross-references. |
+| [**VaultKG**](https://github.com/Flux-Frontiers/vault_kg) | `vault` | [`vault-kg`](https://pypi.org/project/vault-kg/) | Obsidian-style Markdown vaults as a knowledge graph: notes, folders, wikilinks, and backlinks. |
+| [**DiaryKG**](https://github.com/Flux-Frontiers/diary_kg) | `diary` | [`diary-kg`](https://pypi.org/project/diary-kg/) | Personal diary corpus as a temporally ordered knowledge graph. Chronological narrative + semantic search. |
+| [**MemoryKG**](https://github.com/Flux-Frontiers/memory_kg) | `memory` | [`memory-kg`](https://pypi.org/project/memory-kg/) | Episodic memory traces: personal recollections structured as an associative knowledge graph. |
+| [**AgentKG**](https://github.com/Flux-Frontiers/agent_kg) | `agent` | [`agent-kg`](https://pypi.org/project/agent-kg/) | Conversational memory as a live knowledge graph. Persists agent session context across turns; queryable by topic and entity. |
+| [**FTreeKG**](https://github.com/Flux-Frontiers/ftree_kg) | `filetree` | [`ftree-kg`](https://pypi.org/project/ftree-kg/) | File system tree knowledge graph: directory hierarchies, file metadata, and image EXIF data. |
+| [**GenealogyKG**](https://github.com/Flux-Frontiers/genealogy_kg) | `genealogy` | [`genealogy-kg`](https://pypi.org/project/genealogy-kg/) | GEDCOM family-history files as a knowledge graph: people, families, events, and places, with lineage walks and a living-person privacy filter. |
+| [**GutenbergKG**](https://github.com/Flux-Frontiers/gutenberg_kg) | `gutenberg` | GitHub | GutenbergKG - the Knowledge Press. 245 Books, 1.2m Nodes, 5.4m Edges |
+| [**MetaboKG**](https://github.com/Flux-Frontiers/metabo_kg) | `meta` | GitHub | Metabolic pathway knowledge graph backed by KEGG/BioCyc reaction schemas. Supports FBA, ODE simulation, and what-if perturbation analysis. |
+| [**ConnectomeKG**](https://github.com/Flux-Frontiers/connectome_kg) | `connectome` | [`connectome-kg`](https://pypi.org/project/connectome-kg/) | The FlyWire FAFB v783 *Drosophila* connectome as a knowledge graph: 139,255 neurons and 3.7 million synaptic pairs, with path and cone queries between cell types. |
+
+### Corpora
 
 | Repository | Description |
 |---|---|
-| [**ProteusPy**](https://github.com/suchanek/proteusPy) | Python library for protein structure analysis — disulfide bond geometry, PDB parsing, torsion angle calculation, visualization. Used in structural bioinformatics research. |
-| [**WaveRider**](https://github.com/Flux-Frontiers/waverider) | Riemannian manifold ML stack — zero-parameter classifiers, geometric gradient descent, and intrinsic dimensionality probes for high-dimensional embedding spaces. |
+| [**The Diary of Samuel Pepys**](https://github.com/Flux-Frontiers/corpus_pepys) | Pepys's complete diary (1660-1669) as an interactive semantic knowledge graph, built on DiaryKG. |
 
+### Holographic visualization
+
+| Repository | PyPI | Description |
+|---|---|---|
+| [**Quiltwright**](https://github.com/Flux-Frontiers/quiltwright) | [`quiltwright`](https://pypi.org/project/quiltwright/) | Holographic output for scientific visualization: renders a 3-D scene as a light-field quilt and casts it to a Looking Glass display. |
+| [**pypdb2pov**](https://github.com/Flux-Frontiers/pypdb2pov) | [`pypdb2pov`](https://pypi.org/project/pypdb2pov/) | Converts PDB and mmCIF protein structures into POV-Ray scenes. |
+
+### Scientific computing
+
+| Repository | PyPI | Description |
+|---|---|---|
+| [**ProteusPy**](https://github.com/suchanek/proteusPy) | [`proteusPy`](https://pypi.org/project/proteusPy/) | Python library for protein structure analysis: disulfide bond geometry, PDB parsing, torsion angle calculation, visualization. Used in structural bioinformatics research. |
+| [**WaveRider**](https://github.com/Flux-Frontiers/waverider) | [`waverider`](https://pypi.org/project/waverider/) | Riemannian manifold ML stack: zero-parameter classifiers, geometric gradient descent, and intrinsic dimensionality probes for high-dimensional embedding spaces. |
+| [**turtlend**](https://github.com/Flux-Frontiers/turtlend) | [`turtlend`](https://pypi.org/project/turtlend/) | A turtle that carries its own orthonormal frame through 3- or N-dimensional space: `TurtleND`, `Turtle3D`, and `Vector3D`. |
 
 ---
 
@@ -86,7 +113,7 @@ MCP integration means any AI agent — Claude, GitHub Copilot, Cursor, or a cust
 
 The long-term goal is a **universal knowledge compiler**: a framework that can ingest any formally structured artifact — in any language, any scientific domain — and produce a queryable, traversable knowledge graph that participates fully in federated retrieval.
 
-Near-term expansion targets: TypeScript/JavaScript (`tskg`), C++ (`cppkg`), genomics, US legal corpus, and infrastructure-as-code. The same adapter pattern applies to all of them.
+TypeScript, Swift, Obsidian vaults, family history, and the fly connectome have joined since this roadmap was first written. Next targets: C++ (`cppkg`), genomics, US legal corpus, and infrastructure-as-code. The same adapter pattern applies to all of them.
 
 ---
 
