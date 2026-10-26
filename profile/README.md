@@ -61,6 +61,14 @@ Every repository below is public. Packages marked with a PyPI name install with 
 |---|---|
 | [**The Diary of Samuel Pepys**](https://github.com/Flux-Frontiers/corpus_pepys) | Pepys's complete diary (1660-1669) as an interactive semantic knowledge graph, built on DiaryKG. |
 
+### The Knowledge Press
+
+Ways to read a knowledge graph by walking through it: each edition draws its data as trees you drive among in 3-D, in the browser.
+
+| Edition | Website | Description |
+|---|---|---|
+| [**The Forest**](https://github.com/Flux-Frontiers/knowledge_press) | [Open the Forest](https://flux-frontiers.github.io/knowledge_press/) | A GutenbergKG corpus of public-domain books, every book grown as a tree. Also an iPhone, iPad and Mac app that searches the corpus on the device. |
+
 ### Holographic visualization
 
 | Repository | PyPI | Description |
