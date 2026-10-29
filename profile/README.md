@@ -66,7 +66,7 @@ Ways to read a knowledge graph by walking through it: each edition draws its dat
 | Edition | Website | Description |
 |---|---|---|
 | [**The Forest**](https://github.com/Flux-Frontiers/knowledge_press) | [Open the Forest](https://flux-frontiers.github.io/knowledge_press/) | A GutenbergKG corpus of public-domain books, every book grown as a tree. Also an iPhone, iPad and Mac app that searches the corpus on the device. |
-| **The Family** | Coming soon | A GenealogyKG family tree: each line of descent grown as a tree, families as groves, the home person's line gilded. |
+| [**The Family**](https://github.com/Flux-Frontiers/kpress_family) | [Open the orchard](https://flux-frontiers.github.io/kpress_family/) | A GenealogyKG family history as an orchard: one grove per surname, one tree per family line, and at the hub the home tree, a full hourglass with descendants as the crown and ancestors as the roots. Three public families. |
 | [**The Disulfides**](https://github.com/Flux-Frontiers/kpress_disulfide) | [Open the orchard](https://flux-frontiers.github.io/kpress_disulfide/) | The proteusPy disulfide database: every disulfide bond in the Protein Data Bank, 158,965 in the published set, classified by its five torsions, each binary class grown as a tree in groves by family. |
 
 ### Holographic visualization
