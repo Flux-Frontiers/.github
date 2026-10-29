@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo.png" alt="Flux Frontiers" width="192"/>
+  <img src="assets/flux-frontiers-avatar.png" alt="Flux Frontiers" width="192"/>
 </p>
 
 <h1 align="center">Flux Frontiers</h1>
@@ -69,7 +69,7 @@ Ways to read a knowledge graph by walking through it: each edition draws its dat
 |---|---|---|
 | [**The Forest**](https://github.com/Flux-Frontiers/knowledge_press) | [Open the Forest](https://flux-frontiers.github.io/knowledge_press/) | A GutenbergKG corpus of public-domain books, every book grown as a tree. Also an iPhone, iPad and Mac app that searches the corpus on the device. |
 | **The Family** | Coming soon | A GenealogyKG family tree: each line of descent grown as a tree, families as groves, the home person's line gilded. |
-| [**The Disulfides**](https://github.com/Flux-Frontiers/kpress_disulfide) | [Open the Disulfides](https://flux-frontiers.github.io/kpress_disulfide/) | Every disulfide bond in the Protein Data Bank from the ProteusPy database: each of the 32 binary structural classes grown as a tree, groves by class family, the published set of 158,965 bonds. |
+| [**The Disulfides**](https://github.com/Flux-Frontiers/kpress_disulfide) | [Open the orchard](https://flux-frontiers.github.io/kpress_disulfide/) | The proteusPy disulfide database: every disulfide bond in the Protein Data Bank, 158,965 in the published set, classified by its five torsions, each binary class grown as a tree in groves by family. |
 
 ### Holographic visualization
 
