@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo.png" alt="Flux Frontiers" width="192"/>
+  <img src="assets/flux-frontiers-avatar.png" alt="Flux Frontiers" width="192"/>
 </p>
 
 <h1 align="center">Flux Frontiers</h1>
