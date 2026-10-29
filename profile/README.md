@@ -1,8 +1,6 @@
 <p align="center">
-  <img src="assets/flux-frontiers-avatar.png" alt="Flux Frontiers" width="192"/>
+  <img src="assets/flux-frontiers-banner-art-techno.png" alt="Flux Frontiers"/>
 </p>
-
-<h1 align="center">Flux Frontiers</h1>
 
 <p align="center">
   <em>One registry. Many KGs. Infinite domains.</em>
