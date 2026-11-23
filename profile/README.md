@@ -8,7 +8,6 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/python-3.12%20%7C%203.13-blue.svg" alt="Python">
-  <a href="https://www.elastic.co/licensing/elastic-license"><img src="https://img.shields.io/badge/License-Elastic%202.0-blue.svg" alt="License"></a>
   <img src="https://img.shields.io/badge/status-active-brightgreen" alt="Status">
 </p>
 
@@ -33,6 +32,8 @@ The fleet, 2024-2026: 26 repositories in 100 seconds. [Full resolution (1080p, 9
 ## The Fleet
 
 Every repository below is public. Packages marked with a PyPI name install with `pip`; the rest install from GitHub.
+
+Most packages are under the [Elastic License 2.0](https://www.elastic.co/licensing/elastic-license). quiltwright, pypdb2pov, turtlend and proteusPy are BSD-3-Clause, and satprint is MIT. Each repository's LICENSE file governs.
 
 ### Federation and SDK
 
@@ -101,7 +102,7 @@ Ways to read a knowledge graph by walking through it: each edition draws its dat
 
 ## How It Works
 
-All domain KG libraries implement a common `KGAdapter` protocol — a clean three-method interface (`query`, `pack`, `stats`). Our federation platform uses this contract to fan queries out across every registered graph simultaneously, globally rank the results, and return a unified answer set with full source provenance:
+Each domain KG is its own library, CLI and MCP server. KGRAG wraps each one in an adapter with a shared query, pack and stats interface. It sends a query to every registered graph at once, ranks the results together, and returns one answer set with the source of every result:
 
 ```
 User Query: "glucose transport mechanism"
@@ -122,11 +123,11 @@ MCP integration means any AI agent — Claude, GitHub Copilot, Cursor, or a cust
 
 ## Design Principles
 
-1. **Structure is authoritative** — Graph edges are derived from formal grammars and ontologies; they are not approximated or inferred.
-2. **Semantics accelerate, they do not replace** — Vector embeddings make retrieval fast; structural traversal makes it correct.
-3. **Adapter-first extensibility** — Adding a new knowledge domain requires only implementing `KGAdapter`. The federation layer requires no changes.
-4. **Agent-first architecture** — MCP integration is first-class, not an afterthought. Every KG is immediately usable by any MCP-compatible agent.
-5. **Deterministic retrieval** — Every result is traceable to a source file, line number, or pathway node. Zero hallucination by construction.
+1. **Structure is authoritative** -- Graph edges are derived from formal grammars and ontologies; they are not approximated or inferred.
+2. **Semantics accelerate, they do not replace** -- Vector embeddings make retrieval fast; structural traversal makes it correct.
+3. **Adapter-first extensibility** -- Adding a domain means writing one adapter. The ranking, CLI and MCP layers stay the same.
+4. **Agent-first architecture** -- MCP integration is first-class, not an afterthought. Every KG is immediately usable by any MCP-compatible agent.
+5. **Deterministic retrieval** -- Every result traces to a source file, line or node.
 
 ---
 
