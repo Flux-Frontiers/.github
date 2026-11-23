@@ -49,14 +49,14 @@ Every repository below is public. Packages marked with a PyPI name install with 
 | [**TSCodeKG**](https://github.com/Flux-Frontiers/tscode_kg) | `typescript` | [`tscode-kg`](https://pypi.org/project/tscode-kg/) | The same code graph for TypeScript and JavaScript, built with tree-sitter. |
 | [**SwiftKG**](https://github.com/Flux-Frontiers/swift_kg) | `swift` | [`swift-kg`](https://pypi.org/project/swift-kg/) | The same code graph for Swift codebases, built with tree-sitter. |
 | [**DocKG**](https://github.com/Flux-Frontiers/doc_kg) | `doc` | [`doc-kg`](https://pypi.org/project/doc-kg/) | Semantic knowledge graph for document corpora: Markdown, plain text, RST, and PDF. Extracts sections, topics, entities, and cross-references. |
-| [**VaultKG**](https://github.com/Flux-Frontiers/vault_kg) | `vault` | [`vault-kg`](https://pypi.org/project/vault-kg/) | Obsidian-style Markdown vaults as a knowledge graph: notes, folders, wikilinks, and backlinks. |
+| [**VaultKG**](https://github.com/Flux-Frontiers/vault_kg) | `vault` | [`vault-kg`](https://pypi.org/project/vault-kg/) | Obsidian-style Markdown vaults as a knowledge graph: notes, headings, tags, wikilinks, and backlinks. |
 | [**DiaryKG**](https://github.com/Flux-Frontiers/diary_kg) | `diary` | [`diary-kg`](https://pypi.org/project/diary-kg/) | Personal diary corpus as a temporally ordered knowledge graph. Chronological narrative + semantic search. |
-| [**MemoryKG**](https://github.com/Flux-Frontiers/memory_kg) | `memory` | [`memory-kg`](https://pypi.org/project/memory-kg/) | Episodic memory traces: personal recollections structured as an associative knowledge graph. |
+| [**MemoryKG**](https://github.com/Flux-Frontiers/memory_kg) | `memory` | [`memory-kg`](https://pypi.org/project/memory-kg/) | Conversational memory and document corpora as a hybrid knowledge graph. Retrieval uses no language model and no cloud service. |
 | [**AgentKG**](https://github.com/Flux-Frontiers/agent_kg) | `agent` | [`agent-kg`](https://pypi.org/project/agent-kg/) | Conversational memory as a live knowledge graph. Persists agent session context across turns; queryable by topic and entity. |
 | [**FTreeKG**](https://github.com/Flux-Frontiers/ftree_kg) | `filetree` | [`ftree-kg`](https://pypi.org/project/ftree-kg/) | File system tree knowledge graph: directory hierarchies, file metadata, and image EXIF data. |
 | [**GenealogyKG**](https://github.com/Flux-Frontiers/genealogy_kg) | `genealogy` | [`genealogy-kg`](https://pypi.org/project/genealogy-kg/) | GEDCOM family-history files as a knowledge graph: people, families, events, and places, with lineage walks and a living-person privacy filter. |
-| [**GutenbergKG**](https://github.com/Flux-Frontiers/gutenberg_kg) | `gutenberg` | GitHub | GutenbergKG - the Knowledge Press. 245 Books, 1.2m Nodes, 5.4m Edges |
-| [**MetaboKG**](https://github.com/Flux-Frontiers/metabo_kg) | `meta` | GitHub | Metabolic pathway knowledge graph backed by KEGG/BioCyc reaction schemas. Supports FBA, ODE simulation, and what-if perturbation analysis. |
+| [**GutenbergKG**](https://github.com/Flux-Frontiers/gutenberg_kg) | `gutenberg` | GitHub | GutenbergKG - the Knowledge Press. 265 Books, 1.4m Nodes, 5.4m Edges |
+| [**MetaboKG**](https://github.com/Flux-Frontiers/metabo_kg) | `meta` | GitHub | Metabolic pathway knowledge graph built from KEGG pathways and SBML genome-scale models. Supports FBA, ODE simulation, and what-if perturbation analysis. |
 | [**ConnectomeKG**](https://github.com/Flux-Frontiers/connectome_kg) | `connectome` | [`connectome-kg`](https://pypi.org/project/connectome-kg/) | The FlyWire FAFB v783 *Drosophila* connectome as a knowledge graph: 139,255 neurons and 3.7 million synaptic pairs, with path and cone queries between cell types. |
 
 ### Corpora
@@ -82,6 +82,12 @@ Ways to read a knowledge graph by walking through it: each edition draws its dat
 | [**Quiltwright**](https://github.com/Flux-Frontiers/quiltwright) | [`quiltwright`](https://pypi.org/project/quiltwright/) | Holographic output for scientific visualization: renders a 3-D scene as a light-field quilt and casts it to a Looking Glass display. |
 | [**pypdb2pov**](https://github.com/Flux-Frontiers/pypdb2pov) | [`pypdb2pov`](https://pypi.org/project/pypdb2pov/) | Converts PDB and mmCIF protein structures into POV-Ray scenes. |
 
+### Image generation
+
+| Repository | PyPI | Description |
+|---|---|---|
+| [**imagewright**](https://github.com/Flux-Frontiers/imagewright) | [`imagewright`](https://pypi.org/project/imagewright/) | Image generation over one HTTP contract: a client, local FLUX and SDXL servers, and an MCP tool. KGRAG and GutenbergKG draw their images through it. |
+
 ### Scientific computing
 
 | Repository | PyPI | Description |
@@ -89,6 +95,7 @@ Ways to read a knowledge graph by walking through it: each edition draws its dat
 | [**ProteusPy**](https://github.com/suchanek/proteusPy) | [`proteusPy`](https://pypi.org/project/proteusPy/) | Python library for protein structure analysis: disulfide bond geometry, PDB parsing, torsion angle calculation, visualization. Used in structural bioinformatics research. |
 | [**WaveRider**](https://github.com/Flux-Frontiers/waverider) | [`waverider`](https://pypi.org/project/waverider/) | Riemannian manifold ML stack: zero-parameter classifiers, geometric gradient descent, and intrinsic dimensionality probes for high-dimensional embedding spaces. |
 | [**turtlend**](https://github.com/Flux-Frontiers/turtlend) | [`turtlend`](https://pypi.org/project/turtlend/) | A turtle that carries its own orthonormal frame through 3- or N-dimensional space: `TurtleND`, `Turtle3D`, and `Vector3D`. |
+| [**satprint**](https://github.com/suchanek/satprint) | [`satprint`](https://pypi.org/project/satprint/) | Satellite terrain to 3-D-printable models: watertight STL, multi-color 3MF, and textured GLB, with OpenStreetMap buildings, roof shapes, and landmarks. |
 
 ---
 
