@@ -33,7 +33,7 @@ The fleet, 2024-2026: 26 repositories in 100 seconds. [Full resolution (1080p, 9
 
 Every repository below is public. Packages marked with a PyPI name install with `pip`; the rest install from GitHub.
 
-Most packages are under the [Elastic License 2.0](https://www.elastic.co/licensing/elastic-license). quiltwright, pypdb2pov, turtlend and proteusPy are BSD-3-Clause, and satprint is MIT. Each repository's LICENSE file governs.
+Most packages are under the [Elastic License 2.0](https://www.elastic.co/licensing/elastic-license). quiltwright, pypdb2pov, turtlend, proteusPy and satprint are BSD-3-Clause. Each repository's LICENSE file governs.
 
 ### Federation and SDK
 
