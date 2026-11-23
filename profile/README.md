@@ -24,6 +24,10 @@ We build the full stack: individual domain KG libraries, a federated orchestrati
 
 ---
 
+## The History
+
+https://github.com/user-attachments/assets/9c884ff4-ac1f-415d-80d7-3f6655274b75
+
 ## The Stack
 
 Every repository below is public. Packages marked with a PyPI name install with `pip`; the rest install from GitHub.
