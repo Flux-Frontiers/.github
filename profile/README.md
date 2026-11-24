@@ -27,7 +27,7 @@ We build the full stack: individual domain KG libraries, a federated orchestrati
 
 https://github.com/user-attachments/assets/9c884ff4-ac1f-415d-80d7-3f6655274b75
 
-The fleet, 2024-2026: 26 repositories in 100 seconds. [Full resolution (1080p, 91 MB)](https://github.com/Flux-Frontiers/.github/releases/download/the-fleet-2026-11-23/fleet_film_2026-11-23.mp4) | [Release](https://github.com/Flux-Frontiers/.github/releases/tag/the-fleet-2026-11-23)
+The fleet, 2024-2026: 25 repositories in 96 seconds. [Full resolution (1080p, 89 MB)](https://github.com/Flux-Frontiers/.github/releases/download/the-fleet-2026-11-23-cut8/fleet_film_2026-11-23_cut8.mp4) | [Release](https://github.com/Flux-Frontiers/.github/releases/tag/the-fleet-2026-11-23-cut8)
 
 ## The Fleet
 
